@@ -9,7 +9,7 @@ $(function () {
       <span>아직 찜하신 콘텐츠가 없습니다.</span>
       </div>`);
     } else {
-      fetch("./json/goods.json")
+      fetch("./https://sinjawon.github.io/moivebox/json/goods.json")
         .then((response) => response.json())
         .then((json) => {
           let { movies } = json;

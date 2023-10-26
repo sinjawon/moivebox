@@ -16,7 +16,7 @@ $(function () {
     $("#rel_contents").css("display", "none");
     var modalTitleVal = $(this).attr("value");
 
-    fetch("./json/goods.json")
+    fetch("./https://sinjawon.github.io/moivebox/json/goods.json")
       .then((response) => response.json())
       .then((json) => {
         let { movies } = json;
