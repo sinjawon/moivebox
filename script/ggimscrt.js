@@ -9,7 +9,7 @@ $(function () {
       <span>아직 찜하신 콘텐츠가 없습니다.</span>
       </div>`);
     } else {
-      fetch("./https://sinjawon.github.io/moivebox/json/goods.json")
+      fetch("/https://sinjawon.github.io/moivebox/json/goods.json")
         .then((response) => response.json())
         .then((json) => {
           let { movies } = json;
@@ -35,7 +35,9 @@ $(function () {
   //기본삭제
   $(document).on("click", ".ggim_del", function () {
     var ggim_del_val = $(this).val();
-    var cfirm_result = confirm(ggim_del_val + "\n을(를) 찜목록에서 삭제하시겠습니까?");
+    var cfirm_result = confirm(
+      ggim_del_val + "\n을(를) 찜목록에서 삭제하시겠습니까?"
+    );
 
     if (cfirm_result === true) {
       var jggim = JSON.parse(localStorage.getItem("ggim"));
@@ -56,7 +58,9 @@ $(function () {
         return $(this).attr("title");
       })
       .get(); //이거 다시써먹자 신기하네
-    var cfirm_result = confirm("선택된\n" + checkedList + "을(를)\n 찜목록에서 삭제하시겠습니까?");
+    var cfirm_result = confirm(
+      "선택된\n" + checkedList + "을(를)\n 찜목록에서 삭제하시겠습니까?"
+    );
 
     if (cfirm_result === true) {
       if (checkedList === undefined || checkedList == "") {

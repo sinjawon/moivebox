@@ -1,7 +1,9 @@
 $(function () {
   //  상시로 보여질 화면
 
-  fetch("https://sinjawon.github.io/moivebox/https://sinjawon.github.io/moivebox/json/goods.json")
+  fetch(
+    "https://sinjawon.github.io/moivebox/https://sinjawon.github.io/moivebox/json/goods.json"
+  )
     .then((response) => response.json())
     .then((json) => {
       let { movies } = json;
@@ -51,7 +53,7 @@ $(function () {
       console.log(inputValue);
       var inputValueViod = inputValue.split().join(); //입력값 공백제거 저장
 
-      fetch("./https://sinjawon.github.io/moivebox/json/goods.json")
+      fetch("/https://sinjawon.github.io/moivebox/json/goods.json")
         .then((response) => response.json())
         .then((json) => {
           let { movies } = json;
@@ -107,7 +109,7 @@ $(function () {
 
       if (title === "movie") {
         //영화스크롤
-        fetch("./https://sinjawon.github.io/moivebox/json/goods.json")
+        fetch("/https://sinjawon.github.io/moivebox/json/goods.json")
           .then((response) => response.json())
           .then((json) => {
             let { movies } = json;
@@ -137,7 +139,7 @@ $(function () {
           });
       } else if (title === "ani") {
         //애니메이션 스크롤
-        fetch("./https://sinjawon.github.io/moivebox/json/goods.json")
+        fetch("/https://sinjawon.github.io/moivebox/json/goods.json")
           .then((response) => response.json())
           .then((json) => {
             let { movies } = json;
@@ -168,7 +170,7 @@ $(function () {
           });
       } else if (title === "entertainment") {
         //드라마스크롤
-        fetch("./https://sinjawon.github.io/moivebox/json/goods.json")
+        fetch("/https://sinjawon.github.io/moivebox/json/goods.json")
           .then((response) => response.json())
           .then((json) => {
             let { movies } = json;
@@ -197,7 +199,7 @@ $(function () {
           });
       } else if (title === "drama") {
         //예능 스크롤
-        fetch("./https://sinjawon.github.io/moivebox/json/goods.json")
+        fetch("/https://sinjawon.github.io/moivebox/json/goods.json")
           .then((response) => response.json())
           .then((json) => {
             let { movies } = json;
@@ -227,7 +229,7 @@ $(function () {
             dramaShowed += showTen;
           });
       } else {
-        fetch("./https://sinjawon.github.io/moivebox/json/goods.json")
+        fetch("/https://sinjawon.github.io/moivebox/json/goods.json")
           .then((response) => response.json())
           .then((json) => {
             let { movies } = json;
@@ -326,8 +328,6 @@ $(function () {
   });
   //호버 이미지 타이머 끝
 
-  
-
   //--------------------------------------------------------- 카테고리클릭이밴트 -------------------------------------------------------------
 
   //  버튼 클릭하고 왔을떄
@@ -348,7 +348,7 @@ $(function () {
     movieShowed = 0;
     $("#movieSection").empty(); // 기존 내용을 지웁니다.s
     $("#movieSection").append(`<span class="sub_name">영화</span>`);
-    fetch("./https://sinjawon.github.io/moivebox/json/goods.json")
+    fetch("/https://sinjawon.github.io/moivebox/json/goods.json")
       .then((response) => response.json())
       .then((json) => {
         let { movies } = json;
@@ -388,7 +388,7 @@ $(function () {
     aniShowed = 0;
     $("#aniSection").empty(); // 기존 내용을 지웁니다.
     $("#aniSection").append(`<span class="sub_name">애니메이션</span>`);
-    fetch("./https://sinjawon.github.io/moivebox/json/goods.json")
+    fetch("/https://sinjawon.github.io/moivebox/json/goods.json")
       .then((response) => response.json())
       .then((json) => {
         let { movies } = json;
@@ -430,7 +430,7 @@ $(function () {
     enterShowed = 0; //보여질거 일단 초기화
     $("#entertainmentSection").empty(); // 기존 내용을 지웁니다.
     $("#entertainmentSection").append(`<span class="sub_name">예능</span>`);
-    fetch("./https://sinjawon.github.io/moivebox/json/goods.json")
+    fetch("/https://sinjawon.github.io/moivebox/json/goods.json")
       .then((response) => response.json())
       .then((json) => {
         let { movies } = json;
@@ -472,7 +472,7 @@ $(function () {
     dramaShowed = 0;
     $("#dramaSection").empty(); // 기존 내용을 지웁니다.
     $("#dramaSection").append(`<span class="sub_name">드라마</span>`);
-    fetch("./https://sinjawon.github.io/moivebox/json/goods.json")
+    fetch("/https://sinjawon.github.io/moivebox/json/goods.json")
       .then((response) => response.json())
       .then((json) => {
         let { movies } = json;
