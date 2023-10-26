@@ -9,7 +9,13 @@ $(function () {
   });
 
   $(document).on("click keypress", ".modal_button", function () {
-    
+    $("info_list button").css("backgroundColor", "#666");
+
+    $("info_list button")
+      .filter(function () {
+        return $(this).val() === "1";
+      })
+      .css("background-color", "#8b0000");
 
     $("#movieRoundList_wrap").css("display", "block");
     $("#ipb").css("display", "none");
@@ -135,8 +141,6 @@ $(function () {
 
   //////////////////////////////////////////////////// 코맨트 입력 저장 스크립트///////////////////////////////////
 
-  
-
   var commentInput = document.getElementById("commentInput");
   commentInput.addEventListener("keypress", addComment);
 
@@ -200,7 +204,6 @@ $(function () {
     }
   }
 
-  
   function loadCommentsFromLocalStorage(commentSubject) {
     var commentSection = document.getElementById("commentSection");
     commentSection.innerHTML = "";
