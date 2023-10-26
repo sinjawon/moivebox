@@ -8,10 +8,11 @@
 @media (max-width: 399px) {
   /* top 10 영화 타이틀 */
   div#wrap div#contents div#top_title {
-    font-size: 2em;
+    font-size: 1em;
     font-weight: 500;
-    padding-left: 50px;
+    padding-left: 20px;
     margin-top: 300px;
+    margin-bottom: 50px;
   }
   /* 글씨: top */
   div#wrap div#contents div#top_title p:nth-child(1) {
@@ -19,6 +20,7 @@
   }
   /* 숫자: 10 */
   div#wrap div#contents div#top_title p:nth-child(1) span {
+    font-size: 2em;
     color: red;
   }
   /* 글씨: movies */
@@ -30,30 +32,29 @@
     color: gray;
   }
 
-  /* 숫자들: top 10 */
   swiper-container.mySwiper {
     width: 100%;
-    min-height: 300px;
+    min-height: 250px;
     margin-left: 6%;
     margin-top: 600px;
     overflow: hidden;
   }
   swiper-container.mySwiper span {
-    font-size: 5rem;
+    font-size: 4rem;
     font-weight: 900px;
     letter-spacing: -5px;
     color: #333;
   }
   swiper-container.mySwiper swiper-slide {
     text-align: left;
-    margin: 0;
+    margin-right: 20px;
     padding: 0;
   }
   swiper-container.mySwiper swiper-slide img {
-    width: 150px;
-    height: 200px;
+    width: 100px;
+    height: 140px;
     border-radius: 15px;
-    padding: 0;
+    padding: 2px;
   }
   swiper-container.mySwiper swiper-slide img.outline:hover {
     object-fit: cover;
@@ -65,6 +66,7 @@
     display: fixed;
     justify-content: space-between;
     align-items: center;
+    position: relative;
   }
   /* 추천영화 제목 */
   div#wrap div#contents2 div#recomm div#recommWrap h1 {
@@ -78,8 +80,8 @@
     color: red;
   }
   div#recomm div#recommWrap {
-    width: 80%;
-    margin: 100px auto;
+    width: 90%;
+    margin: 0px auto;
     border: 0px solid red;
     border-top: none;
     border-bottom-left-radius: 30px;
@@ -89,14 +91,14 @@
     color: bisque;
   }
   div#recomm div#recommWrap div.carousel {
-    height: 350px;
+    height: 300px;
     perspective: 200px;
   }
   div#recomm div#recommWrap div.carousel a.carousel-item {
     height: 200px;
   }
   div#recomm div#recommWrap div.carousel a.carousel-item img {
-    width: 85%;
+    width: 65%;
     border-radius: 15px;
   }
   /* 추천영상 - 클릭하면 이동하는 인디케이터 */
@@ -113,9 +115,9 @@
 @media (min-width: 400px) and (max-width: 767px) {
   /* top 10 영화 타이틀 */
   div#wrap div#contents div#top_title {
-    font-size: 2em;
+    font-size: 1.2em;
     font-weight: 500;
-    padding-left: 50px;
+    padding-left: 30px;
     margin-top: 300px;
   }
   /* 글씨: top */
@@ -124,6 +126,7 @@
   }
   /* 숫자: 10 */
   div#wrap div#contents div#top_title p:nth-child(1) span {
+    font-size: 2em;
     color: red;
   }
   /* 글씨: movies */
@@ -138,20 +141,19 @@
   /* 숫자들: top 10 */
   swiper-container.mySwiper {
     width: 100%;
-    min-height: 300px;
+    min-height: 400px;
     margin-left: 6%;
-    margin-top: 600px;
     overflow: hidden;
   }
   swiper-container.mySwiper span {
-    font-size: 5rem;
+    font-size: 7rem;
     font-weight: 900px;
-    letter-spacing: -5px;
+    letter-spacing: -10px;
     color: #333;
   }
   swiper-container.mySwiper swiper-slide {
     text-align: left;
-    margin: 0;
+    margin-right: 15px;
     padding: 0;
   }
   swiper-container.mySwiper swiper-slide img {
@@ -182,8 +184,8 @@
     color: red;
   }
   div#recomm div#recommWrap {
-    width: 85%;
-    margin: 100px auto;
+    width: 90%;
+    margin: 0px auto;
     border: 0px solid red;
     border-top: none;
     border-bottom-left-radius: 30px;
@@ -193,14 +195,14 @@
     color: bisque;
   }
   div#recomm div#recommWrap div.carousel {
-    height: 350px;
-    perspective: 700px;
+    height: 380px;
+    perspective: 500px;
   }
   div#recomm div#recommWrap div.carousel a.carousel-item {
     height: 300px;
   }
   div#recomm div#recommWrap div.carousel a.carousel-item img {
-    width: 90%;
+    width: 80%;
     border-radius: 15px;
   }
   /* 추천영상 - 클릭하면 이동하는 인디케이터 */

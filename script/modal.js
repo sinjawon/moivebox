@@ -9,17 +9,11 @@ $(function () {
   });
 
   $(document).on("click keypress", ".modal_button", function () {
-    $("info_list button").css("backgroundColor", "#666");
-
-    $("info_list button")
-      .filter(function () {
-        return $(this).val() === "1";
-      })
-      .css("background-color", "#8b0000");
+    
 
     $("#movieRoundList_wrap").css("display", "block");
     $("#ipb").css("display", "none");
-    $("rel_contents").css("display", "none");
+    $("#rel_contents").css("display", "none");
     var modalTitleVal = $(this).attr("value");
 
     fetch("./json/goods.json")
@@ -141,33 +135,7 @@ $(function () {
 
   //////////////////////////////////////////////////// 코맨트 입력 저장 스크립트///////////////////////////////////
 
-  // function addComment(event) {
-  //   if (
-  //     event.type === "click" ||
-  //     (event.type === "keypress" && event.key === "Enter")
-  //   ) {
-  //     var commentInput = document.getElementById("commentInput");
-  //     var commentText = commentInput.value.trim();
-
-  //     if (commentText !== "") {
-  //       var commentSection = document.getElementById("commentSection");
-  //       var commentContainer = document.createElement("div");
-  //       var comment = document.createElement("p");
-  //       comment.innerText = commentText;
-
-  //       commentContainer.classList.add("commentContainer");
-  //       commentContainer.appendChild(comment);
-
-  //       commentSection.appendChild(commentContainer);
-
-  //       commentInput.value = "";
-
-  //       saveCommentToLocalStorage(commentText);
-
-  //       commentSection.scrollTop = commentSection.scrollHeight;
-  //     }
-  //   }
-  // }
+  
 
   var commentInput = document.getElementById("commentInput");
   commentInput.addEventListener("keypress", addComment);
@@ -232,30 +200,7 @@ $(function () {
     }
   }
 
-  // function loadCommentsFromLocalStorage() {
-  //   var commentSection = document.getElementById("commentSection");
-  //   commentSection.innerHTML = "";
-  //   var commentInfo = JSON.parse(localStorage.getItem(commentSubject)) || [];
-  //   console.log(commentInfo);
-  //   var commentss=[];
-  //    commentss = commentInfo.comments;
-  //  console.log(commentss.length);
-  //   //<div class="commentContainer"><p>comments[i]</p></div>
-  //   if (commentss.length >= 1) {
-  //     for (var i = 0; commentss.length >i+1; i++) {
-  //       var commentContainer = document.createElement("div");
-  //       var comment = document.createElement("p");
-  //       comment.innerText = commentss[i];
-  //       commentContainer.classList.add("commentContainer");
-  //       commentContainer.appendChild(comment);
-  //       commentSection.appendChild(commentContainer);
-  //     }
-  //   }else if(commentss.length ==0){
-  //     var commentContainer = document.createElement("div");
-  //       var comment = document.createElement("p");
-  //       comment.innerText("감상평이 없습니다");
-  //   }
-  // }
+  
   function loadCommentsFromLocalStorage(commentSubject) {
     var commentSection = document.getElementById("commentSection");
     commentSection.innerHTML = "";

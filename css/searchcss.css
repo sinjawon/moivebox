@@ -133,6 +133,10 @@
     letter-spacing: -2px; /* 정미 추가 */
     font-weight: 700px; /* 정미 수정 */
     color: white;
+    width: 80%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
   }
   #recomendList .recomended span.movie_type,
   .sections span.movie_type {
@@ -386,6 +390,10 @@
     letter-spacing: -2px; /* 정미 추가 */
     font-weight: 700px; /* 정미 수정 */
     color: white;
+    width: 80%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
   }
   #recomendList .recomended span.movie_type,
   .sections span.movie_type {
@@ -638,6 +646,10 @@
     letter-spacing: -2px; /* 정미 추가 */
     font-weight: 700px; /* 정미 수정 */
     color: white;
+    width: 80%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
   }
   #recomendList .recomended span.movie_type,
   .sections span.movie_type {
@@ -723,7 +735,7 @@
   /* class명 정미 수정 및 scriptforsearch에서도 수정 */
   .recomended img {
     position: absolute;
-    top: -20px;
+    top: 0px;
     z-index: 2;
     width: 100%;
     height: 340px;
@@ -895,6 +907,10 @@
     letter-spacing: -2px; /* 정미 추가 */
     font-weight: 700px; /* 정미 수정 */
     color: white;
+    width: 80%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
   }
   #recomendList .recomended span.movie_type,
   .sections span.movie_type {
@@ -980,7 +996,7 @@
   /* class명 정미 수정 및 scriptforsearch에서도 수정 */
   .recomended img {
     position: absolute;
-    top: -20px;
+    top: 0px;
     z-index: 2;
     width: 100%;
     height: 340px;

@@ -14,7 +14,7 @@
     float: left;
     padding: 4px;
   }
-  div#wrap footer div ul li:nth-child(5) {
+  div#wrap footer div ul li:nth-child(6) {
     border-right: 0px solid gray;
     display: none;
   }
@@ -44,6 +44,7 @@
   div#wrap footer p.copyright {
     display: block;
     padding-top: 10px;
+    padding-bottom: 20px;
     font-size: 8px;
     color: gray;
   }
@@ -61,7 +62,7 @@
     line-height: 20px;
     border-right: 1px solid gray;
   }
-  div#wrap footer div ul li:nth-child(5) {
+  div#wrap footer div ul li:nth-child(6) {
     border-right: 0px solid gray;
   }
   div#wrap footer div ul li:last-child {
@@ -90,6 +91,7 @@
   div#wrap footer p.copyright {
     display: block;
     padding-top: 20px;
+    padding-bottom: 40px;
     font-size: 10px;
     color: gray;
   }
@@ -108,7 +110,7 @@
     line-height: 20px;
     border-right: 1px solid gray;
   }
-  div#wrap footer div ul li:nth-child(5) {
+  div#wrap footer div ul li:nth-child(6) {
     border-right: 0px solid gray;
   }
   div#wrap footer div ul li:last-child {
@@ -154,7 +156,7 @@
     line-height: 20px;
     border-right: 1px solid gray;
   }
-  div#wrap footer div ul li:nth-child(5) {
+  div#wrap footer div ul li:nth-child(6) {
     border-right: 0px solid gray;
   }
   div#wrap footer div ul li:last-child {

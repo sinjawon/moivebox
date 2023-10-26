@@ -1,8 +1,3 @@
-/*############################################################
-* 레이아웃 css
-* @author TEAM-ONE BY 정미
-* 2023.10.11 ~
-############################################################*/
 @media (max-width: 399px) {
   div#wrap {
     display: block;
@@ -48,14 +43,12 @@
 
   /** Contents 영역 **/
   /* top 10 movie 영역 */
-  /*   div#wrap div#contents {
+  div#wrap div#contents {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-height: 300px;
-  } */
-  div#wrap div#contents {
-    display: none;
+    margin-top: -200px;
+    max-height: 400px;
   }
 
   /** Footer 영역(전체) **/
@@ -64,7 +57,7 @@
     width: 100%;
     height: auto;
     padding: 20px;
-    margin-top: 20px;
+    margin-bottom: 30px;
     background-color: #1f1f1f;
     text-align: center;
   }
@@ -130,9 +123,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-height: 400px;
+    margin-top: -250px;
+    max-height: 550px;
   }
-
   /** Footer 영역(전체) **/
   div#wrap footer {
     position: relative;

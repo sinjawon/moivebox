@@ -282,10 +282,14 @@
     left: 50%;
     transform: translateX(-50%);
   }
+  .katana_logo {
+    width: 150px;
+    height: 150px;
+  }
   .p_main_button1 {
     position: absolute;
     border: none;
-    bottom: 50px;
+    bottom: 85px;
     left: 15%;
     background-color: white;
     color: black;
@@ -297,7 +301,7 @@
   .p_main_button2 {
     position: absolute;
     border: none;
-    bottom: 50px;
+    bottom: 85px;
     right: 15%;
     background-color: white;
     color: black;
@@ -312,7 +316,7 @@
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 10%;
+    height: 5%;
     background: linear-gradient(
       to top,
       rgba(24, 24, 17, 1) 0%,
@@ -591,6 +595,7 @@
   }
   .p_main_img {
     width: 100%;
+    margin-top: 0;
   }
   .p_main_font {
     position: absolute;
@@ -599,10 +604,14 @@
     left: 50%;
     transform: translateX(-50%);
   }
+  .katana_logo {
+    width: 150px;
+    height: 150px;
+  }
   .p_main_button1 {
     position: absolute;
     border: none;
-    bottom: 50px;
+    bottom: 85px;
     left: 15%;
     background-color: white;
     color: black;
@@ -614,7 +623,7 @@
   .p_main_button2 {
     position: absolute;
     border: none;
-    bottom: 50px;
+    bottom: 85px;
     right: 15%;
     background-color: white;
     color: black;
@@ -629,7 +638,7 @@
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 10%;
+    height: 5%;
     background: linear-gradient(
       to top,
       rgba(24, 24, 17, 1) 0%,
@@ -705,6 +714,9 @@
   }
   header .navigation .navigation-items a:hover:before {
     width: 100%;
+  }
+  .navi-item {
+    display: none;
   }
   .menu {
     display: flex;
@@ -911,10 +923,14 @@
     left: 50%;
     transform: translateX(-50%);
   }
+  .katana_logo {
+    width: 250px;
+    height: 250px;
+  }
   .p_main_button1 {
     position: absolute;
     border: none;
-    bottom: 50px;
+    bottom: 85px;
     left: 15%;
     background-color: white;
     color: black;
@@ -926,7 +942,7 @@
   .p_main_button2 {
     position: absolute;
     border: none;
-    bottom: 50px;
+    bottom: 85px;
     right: 15%;
     background-color: white;
     color: black;
@@ -941,7 +957,7 @@
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 10%;
+    height: 5%;
     background: linear-gradient(
       to top,
       rgba(24, 24, 17, 1) 0%,
@@ -1034,7 +1050,7 @@
   .home {
     position: relative;
     width: 100%;
-    min-height: 100vh;
+    height: 100%;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -1055,7 +1071,7 @@
     display: block;
   }
   .home .content h1 {
-    font-size: 4em;
+    font-size: 3.3vw;
     font-weight: 900;
     text-transform: uppercase;
     letter-spacing: 5px;
@@ -1064,7 +1080,7 @@
   }
   .home .content p {
     margin-bottom: 65px;
-    font-size: 20px;
+    font-size: 1.1vw;
     font-weight: 700;
   }
   /* 상세보기 */
@@ -1134,13 +1150,12 @@
   }
 
   /* 헤더 하단 슬라이드 영역 추가 10-18 by HJ*/
-  .K_title h5 {
+  .K_title {
     /*10-19 수정 by HJ */
     position: absolute;
     z-index: 99;
     color: #fff;
     letter-spacing: -1px;
-    width: 100%;
     font-weight: 700px;
     border-left: 5px solid red;
     padding-left: 15px;

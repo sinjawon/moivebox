@@ -1,4 +1,4 @@
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   #mobile_nav_wrap {
     display: none;
     z-index: 9999999999;
@@ -46,7 +46,7 @@
   }
 }
 
-@media (max-width: 1023px) {
+@media (max-width: 767px) {
   #mobile_nav_wrap {
     display: block;
     z-index: 9999999999;
